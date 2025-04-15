@@ -1,0 +1,57 @@
+/* 
+  This file provides additional control over font loading.
+  Import this file in globals.css if you need more specific font-face declarations
+  beyond what Next.js Font Optimization provides.
+*/
+
+/* LTC Bodoni 175 Pro */
+@font-face {
+  font-family: "LTC Bodoni 175 Pro";
+  src: url("/fonts/LTCBodoni175Pro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 
+@font-face {
+  font-family: 'LTC Bodoni 175 Pro';
+  src: url('/fonts/LTCBodoni175Pro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* Playfair Display - Include if using local files instead of Google Fonts */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
