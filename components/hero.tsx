@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 import { Playfair_Display } from "next/font/google"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 
 // Load Playfair Display font
 const playfairDisplay = Playfair_Display({
@@ -14,6 +14,7 @@ const playfairDisplay = Playfair_Display({
 
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     // Check if we're on the client side
@@ -34,23 +35,57 @@ export default function Hero() {
     }
   }, [])
 
+  // Ensure video plays when component mounts
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.log("Video autoplay was prevented:", error)
+      })
+    }
+  }, [])
+
   return (
     <>
-      <section className="w-full min-h-[50vh] flex flex-col justify-center px-4 md:px-8 lg:px-16 py-6 md:py-12">
-        <div className="max-w-6xl mx-auto">
+      {/* Hero Section with Video Background */}
+      <section className="w-full min-h-[80vh] relative flex flex-col justify-center px-4 md:px-8 lg:px-16 py-6 md:py-12 overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          <video
+            ref={videoRef}
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/modern-photography-studio.png"
+          >
+            <source
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/headshothero-pdhaIqDrwHMpqHtCjlzLW1nNsrRcPD.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50 z-1"></div>
+        </div>
+
+        {/* Content */}
+        <div className="max-w-6xl mx-auto relative z-10">
           {/* Main Heading */}
-          <h1 className="hero-heading font-bodoniModa text-center mb-8 md:mb-8 lg:mb-12">
+          <h1 className="hero-heading font-bodoniModa text-center mb-8 md:mb-8 lg:mb-12 text-white">
             PORTLAND&apos;S TOP-RATED HEADSHOT & PORTRAIT PHOTOGRAPHY STUDIO
           </h1>
 
           {/* Subheading with Playfair Display */}
-          <p className={`${playfairDisplay.className} w-full max-w-3xl mx-auto text-center mb-6 md:mb-6 lg:mb-10`}>
+          <p
+            className={`${playfairDisplay.className} w-full max-w-3xl mx-auto text-center mb-6 md:mb-6 lg:mb-10 text-white`}
+          >
             We Offer Headshots & Portraits For Individuals, Teams & Everything In Between. Trusted By Portlands Leading
             Companies & Professionals.
           </p>
 
           {/* Tagline */}
-          <p className={`${playfairDisplay.className} text-center mb-10 md:mb-12 lg:mb-16`}>
+          <p className={`${playfairDisplay.className} text-center mb-10 md:mb-12 lg:mb-16 text-white`}>
             PROFESSIONAL, POLISHED & PRICED RIGHT, EVERY TIME.
           </p>
 
@@ -80,13 +115,12 @@ export default function Hero() {
       </section>
 
       {/* Leave it to the Pros Section - Updated to match Figma design */}
-      <section className="w-full relative mt-8 md:mt-24 mb-0">
+      <section className="w-full relative mt-0 mb-0">
         <div className="relative">
-          {/* Solid Black Background - Updated per request */}
-          <div className="w-full h-[300px] md:h-[300px] bg-black"></div>
+          {/* Remove the black background div that was here */}
 
           {/* Headshot Grid - Responsive grid of images with updated rows */}
-          <div className="w-full relative overflow-hidden" style={{ marginTop: isMobile ? "-280px" : "-250px" }}>
+          <div className="w-full relative overflow-hidden">
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-1 md:gap-2">
               {/* Row 1 - First set of headshots */}
               <div className="aspect-square overflow-hidden">
