@@ -8,14 +8,21 @@ export default function GoogleAnalytics() {
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    // Only track home page and headshots page
-    if (pathname === "/" || pathname === "/headshots") {
+    // Only track home page, headshots page, and thank you page
+    if (pathname === "/" || pathname === "/headshots" || pathname === "/thank-you") {
       const url = pathname + searchParams.toString()
 
       // Track page view
       window.gtag?.("event", "page_view", {
         page_path: url,
       })
+
+      // Track conversion if it's the thank you page
+      if (pathname === "/thank-you") {
+        window.gtag?.("event", "conversion", {
+          send_to: "AW-847156852/CONVERSION_LABEL", // Replace with your actual conversion label
+        })
+      }
 
       console.log(`Tracked page view: ${url}`)
     }
