@@ -2,6 +2,7 @@
 
 import AboutHero from "@/components/about-hero"
 import AboutFeatures from "@/components/about-features"
+import LeaveItToPros from "@/components/leave-it-to-pros"
 import ProudlyOwnedSection from "@/components/proudly-owned-section"
 import UnlimitedSessions from "@/components/unlimited-sessions"
 import ClientTestimonialsSection from "@/components/client-testimonials-section"
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <GoogleAnalytics />
       <AboutHero />
       <AboutFeatures />
+      <LeaveItToPros />
       <ProudlyOwnedSection />
       <UnlimitedSessions />
       <ClientTestimonialsSection />
