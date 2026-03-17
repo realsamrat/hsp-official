@@ -21,13 +21,21 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          {["HEADSHOTS", "PORTRAITS", "GRAD", "MODEL", "ABOUT", "FOR TEAMS", "CONTACT"].map((item) => (
+          {[
+            { label: "HEADSHOTS", href: "/headshots" },
+            { label: "PORTRAITS", href: "/portraits" },
+            { label: "GRAD", href: "/grad" },
+            { label: "MODEL", href: "/model" },
+            { label: "ABOUT", href: "/about" },
+            { label: "FOR TEAMS", href: "/for-teams" },
+            { label: "CONTACT", href: "/contact" },
+          ].map((item) => (
             <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
+              key={item.label}
+              href={item.href}
               className="text-white hover:text-teal-blue transition-colors"
             >
-              {item}
+              {item.label}
             </Link>
           ))}
         </div>
@@ -43,16 +51,31 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-dark-bg z-0 flex flex-col items-center justify-center">
+          <div className="fixed inset-0 bg-dark-bg z-50 flex flex-col items-center justify-center">
+            <button
+              className="absolute top-6 right-4 text-white"
+              onClick={toggleMenu}
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
             <div className="flex flex-col space-y-6 text-center">
-              {["HEADSHOTS", "PORTRAITS", "GRAD", "MODEL", "ABOUT", "FOR TEAMS", "CONTACT"].map((item) => (
+              {[
+                { label: "HEADSHOTS", href: "/headshots" },
+                { label: "PORTRAITS", href: "/portraits" },
+                { label: "GRAD", href: "/grad" },
+                { label: "MODEL", href: "/model" },
+                { label: "ABOUT", href: "/about" },
+                { label: "FOR TEAMS", href: "/for-teams" },
+                { label: "CONTACT", href: "/contact" },
+              ].map((item) => (
                 <Link
-                  key={item}
-                  href={`/${item.toLowerCase()}`}
+                  key={item.label}
+                  href={item.href}
                   className="text-white text-xl hover:text-teal-blue transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
             </div>
