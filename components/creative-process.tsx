@@ -54,7 +54,6 @@ export default function CreativeProcess() {
               <div className="h-48 md:h-56 lg:h-64 mx-6 md:mx-8 mb-6 md:mb-8 rounded overflow-hidden relative">
                 <video
                   className="w-full h-full object-cover rounded"
-                  autoPlay
                   loop
                   muted
                   playsInline
@@ -89,7 +88,6 @@ export default function CreativeProcess() {
                 {!video2Error ? (
                   <video
                     className="w-full h-full object-cover rounded"
-                    autoPlay
                     loop
                     muted
                     playsInline
@@ -124,7 +122,6 @@ export default function CreativeProcess() {
               <div className="h-48 md:h-56 lg:h-64 mx-6 md:mx-8 mb-6 md:mb-8 rounded overflow-hidden relative">
                 <video
                   className="w-full h-full object-cover rounded"
-                  autoPlay
                   loop
                   muted
                   playsInline
@@ -157,7 +154,6 @@ export default function CreativeProcess() {
                 {!videoError ? (
                   <video
                     className="w-full h-full object-cover rounded"
-                    autoPlay
                     loop
                     muted
                     playsInline

@@ -1,3 +1,16 @@
+---
+type: performance-audit
+people: []
+tags:
+  - performance
+  - optimization
+  - web-vitals
+  - accessibility
+  - security
+status: active
+created_date: '2026-03-19'
+description: 'PageSpeed optimization roadmap for headshotportland.com: audit identifying Core Web Vitals failures (LCP 8.8s, FCP 3.3s, SI 5.5s) with prioritized 5-phase action plan to improve performance score from 65 to 85+'
+---
 # PageSpeed Optimization — Round 2 (Real PageSpeed Insights + Chrome DevTools)
 
 **Date:** 2026-03-19

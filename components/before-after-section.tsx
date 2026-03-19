@@ -106,7 +106,7 @@ export default function BeforeAfterSection() {
         <div className="w-full max-w-4xl mx-auto">
           <Link
             href="https://ww3.headshotportland.com/instant-quote"
-            className="block w-full bg-[#2A8CAA] text-white text-center py-4 md:py-5 rounded-full relative overflow-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+            className="block w-full bg-[#1a6985] text-white text-center py-4 md:py-5 rounded-full relative overflow-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
           >
             <div
               className="absolute inset-0 rounded-full"

@@ -161,7 +161,7 @@ export default function UnlimitedSessions() {
                 <div className={`flex ${isMobile ? "flex-col w-full" : "flex-row"} gap-4`}>
                   <Link
                     href="https://ww3.headshotportland.com/instant-quote"
-                    className="bg-[#2A8CAA] text-white text-center py-3 px-8 rounded-full whitespace-nowrap"
+                    className="bg-[#1a6985] text-white text-center py-3 px-8 rounded-full whitespace-nowrap"
                   >
                     <span className="text-base font-bold">GET A FREE QUOTE</span>
                   </Link>
@@ -181,7 +181,7 @@ export default function UnlimitedSessions() {
           <div className="absolute bottom-0 left-0 right-0 z-20">
             <div className="max-w-5xl mx-auto">
               <div
-                className="w-full h-[3px] bg-[#2A8CAA]"
+                className="w-full h-[3px] bg-[#1a6985]"
                 style={{
                   borderRadius: "0px 0px 12px 12px",
                 }}

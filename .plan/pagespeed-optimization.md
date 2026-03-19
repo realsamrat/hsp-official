@@ -4,12 +4,12 @@ people: []
 tags:
   - performance
   - pagespeed
-  - nextjs
+  - next.js
   - optimization
   - frontend
 status: active
 created_date: '2026-03-19'
-description: 'Performance optimization plan for headshotportland.com targeting mobile PageSpeed 80+ and desktop 90+. Phased approach: Next.js 16.2 upgrade, image priority fixes, bundle optimization with dynamic imports, image compression, and CLS improvements.'
+description: 'Phased performance optimization plan for headshotportland.com targeting mobile PageSpeed score improvement from ~40-50 to 80+ and desktop to 90+. Addresses critical issues including excessive image prioritization, disabled image optimization, unnecessary client components, and bu'
 ---
 # pagespeed-optimization
 

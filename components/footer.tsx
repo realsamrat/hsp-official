@@ -27,7 +27,7 @@ export default function Footer() {
             {/* Right Side - Social Icons */}
             <div className="flex items-center space-x-4">
               <Link
-                href="https://instagram.com/headshotportland"
+                href="https://www.instagram.com/headshotportland/"
                 aria-label="Instagram"
                 className="text-white hover:text-[#247BA0] transition-colors"
               >
@@ -116,7 +116,7 @@ export default function Footer() {
             {/* Social Icons - Mobile */}
             <div className="flex justify-center space-x-6 mt-4">
               <Link
-                href="https://instagram.com/headshotportland"
+                href="https://www.instagram.com/headshotportland/"
                 aria-label="Instagram"
                 className="text-white hover:text-[#247BA0] transition-colors"
               >
