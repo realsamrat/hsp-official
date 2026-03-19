@@ -10,9 +10,17 @@ export default function Hero() {
       <section className="w-full min-h-[80vh] relative flex flex-col justify-center px-4 md:px-8 lg:px-16 py-6 md:py-12 overflow-hidden">
         {/* Video Background */}
         <div className="absolute inset-0 w-full h-full z-0">
+          {/* Poster rendered by server — no JS needed for LCP */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/modern-photography-studio.webp"
+            alt=""
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <HeroVideoPlayer
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/headshothero-pdhaIqDrwHMpqHtCjlzLW1nNsrRcPD.mp4"
-            poster="/modern-photography-studio.webp"
           />
           {/* Dark overlay for better text readability */}
           <div className="absolute inset-0 bg-black/50 z-1"></div>
