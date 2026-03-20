@@ -51,7 +51,7 @@ export default function CreativeProcess() {
               <div className="h-48 md:h-56 lg:h-64 mx-6 md:mx-8 mb-6 md:mb-8 rounded overflow-hidden relative">
                 <LazyVideo
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FreeQuoteVid-ZxqKD59Mg2TDb5YkPvOLVe254OiWbr.mp4"
-                  poster="/images/gallery.jpeg"
+                  poster="/images/gallery.webp"
                   className="w-full h-full"
                 />
               </div>
@@ -71,7 +71,7 @@ export default function CreativeProcess() {
               <div className="h-48 md:h-56 lg:h-64 mx-6 md:mx-8 mb-6 md:mb-8 rounded overflow-hidden relative">
                 <LazyVideo
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/posing-DVtao2rZVTGCE0xaa7vQlezNpVpvxP.mp4"
-                  poster="/images/gallery.jpeg"
+                  poster="/images/gallery.webp"
                   className="w-full h-full"
                 />
               </div>
@@ -91,7 +91,7 @@ export default function CreativeProcess() {
               <div className="h-48 md:h-56 lg:h-64 mx-6 md:mx-8 mb-6 md:mb-8 rounded overflow-hidden relative">
                 <LazyVideo
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Images%20-nkHOqGrFlkSZVMHJXsgfOx6U7XkdMD.mp4"
-                  poster="/images/gallery.jpeg"
+                  poster="/images/gallery.webp"
                   className="w-full h-full"
                 />
               </div>
@@ -109,7 +109,7 @@ export default function CreativeProcess() {
               <div className="h-48 md:h-56 lg:h-64 mx-6 md:mx-8 mb-6 md:mb-8 rounded overflow-hidden relative">
                 <LazyVideo
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/EricasGalleryBest1-WQn3tFv86mOGLqXayUDOVrCF6Z2Qld.mp4"
-                  poster="/images/gallery.jpeg"
+                  poster="/images/gallery.webp"
                   className="w-full h-full"
                 />
                     {/* Video play button overlay */}

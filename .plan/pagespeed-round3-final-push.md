@@ -1,15 +1,15 @@
 ---
-type: project
+type: technical audit
 people: []
 tags:
+  - pagespeed
+  - frontend
   - performance
   - accessibility
   - seo
-  - core-web-vitals
-  - image-optimization
 status: active
 created_date: '2026-03-19'
-description: 'Google PageSpeed Insights optimization for headshotportland.com website. Tracks metrics improvement from Round 1 to Round 3 (mobile performance 65→87, desktop 85). Identifies critical issues: Desktop TBT 330ms, Mobile LCP 3.3s, oversized images (176 KiB waste), unused JS (261 KiB'
+description: 'PageSpeed Insights Round 3 audit for headshotportland.com with detailed performance metrics (mobile: 87, desktop: 85) and prioritized action plan. Covers 14 remaining issues across performance optimization (Google Maps lazy-loading, video optimization, image responsiveness), acce'
 ---
 # pagespeed-round3-final-push
 

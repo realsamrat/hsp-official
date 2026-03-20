@@ -110,7 +110,7 @@ export default function ClientTestimonialsSection() {
                     </div>
                     {testimonial.isGoogle && (
                       <Image
-                        src="/images/google-logo-new.png"
+                        src="/images/google-logo-new.webp"
                         alt="Google icon"
                         width={24}
                         height={24}

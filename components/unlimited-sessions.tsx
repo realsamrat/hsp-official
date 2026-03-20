@@ -141,7 +141,7 @@ export default function UnlimitedSessions() {
               <div className="flex flex-col md:flex-row justify-between items-center md:items-center py-4">
                 {/* Google Rating */}
                 <div className="flex items-center mb-4 md:mb-0">
-                  <Image src="/images/google-logo-new.png" alt="Google logo" width={36} height={36} className="mr-3" loading="eager" />
+                  <Image src="/images/google-logo-new.webp" alt="Google logo" width={36} height={36} className="mr-3" loading="eager" />
                   <div>
                     <p className="text-white text-base font-medium">Google Rating</p>
                     <div className="flex items-center">
