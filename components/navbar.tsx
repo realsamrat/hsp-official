@@ -1,10 +1,5 @@
-"use client"
-
-import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu, X } from "lucide-react"
 
 const NAV_ITEMS = [
   { label: "HOME", href: "/" },
@@ -18,14 +13,11 @@ const NAV_ITEMS = [
 ]
 
 export default function Navbar() {
-  const pathname = usePathname()
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-
   return (
-    <header className="w-full text-white py-6 px-5 md:px-16">
+    <header className="w-full text-white py-6 px-5 md:px-16 relative">
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="block z-10">
+        <Link href="/" className="block z-[60]">
           <div className="w-24 h-8 relative">
             <Image
               src="/images/logos/headshot_portland_white.svg"
@@ -40,70 +32,58 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:block">
           <ul className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
-            {NAV_ITEMS.map((item) => {
-              const isActive = pathname === item.href || (item.label === "HOME" && pathname === "/")
-              return (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className={
-                      isActive
-                        ? "bg-white text-brand-teal px-4 py-2 rounded-full font-bold focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
-                        : "hover:underline focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded"
-                    }
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              )
-            })}
+            {NAV_ITEMS.map((item) => (
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  className="hover:underline focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
 
-        {/* Mobile Hamburger Button */}
-        <button
-          className="md:hidden text-white"
-          onClick={() => setIsMenuOpen(true)}
-          aria-label="Open menu"
-        >
-          <Menu size={24} />
-        </button>
-      </div>
+        {/* CSS-only mobile menu — checkbox trick, zero JS */}
+        <input type="checkbox" id="nav-toggle" className="hidden peer/menu" aria-hidden="true" />
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-dark-bg z-50 flex flex-col items-center justify-center">
-          <button
-            className="absolute top-6 right-5 text-white"
-            onClick={() => setIsMenuOpen(false)}
-            aria-label="Close menu"
-          >
-            <X size={24} />
-          </button>
+        {/* Hamburger button (label for checkbox) */}
+        <label htmlFor="nav-toggle" className="md:hidden text-white cursor-pointer z-[60]" aria-label="Toggle menu">
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="18" x2="20" y2="18" />
+          </svg>
+        </label>
+
+        {/* Mobile overlay — hidden by default, shown when checkbox is checked */}
+        <div className="fixed inset-0 bg-dark-bg z-50 hidden flex-col items-center justify-center peer-checked/menu:flex">
+          {/* Close button */}
+          <label htmlFor="nav-toggle" className="absolute top-6 right-5 text-white cursor-pointer" aria-label="Close menu">
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </label>
           <nav>
             <ul className="flex flex-col space-y-6 text-center">
-              {NAV_ITEMS.map((item) => {
-                const isActive = pathname === item.href || (item.label === "HOME" && pathname === "/")
-                return (
-                  <li key={item.label}>
+              {NAV_ITEMS.map((item) => (
+                <li key={item.label}>
+                  <label htmlFor="nav-toggle" className="cursor-pointer">
                     <Link
                       href={item.href}
-                      className={
-                        isActive
-                          ? "text-brand-teal text-xl font-bold"
-                          : "text-white text-xl hover:text-brand-teal transition-colors"
-                      }
-                      onClick={() => setIsMenuOpen(false)}
+                      className="text-white text-xl hover:text-brand-teal transition-colors"
                     >
                       {item.label}
                     </Link>
-                  </li>
-                )
-              })}
+                  </label>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   )
 }
