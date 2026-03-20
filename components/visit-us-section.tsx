@@ -30,7 +30,7 @@ export default function VisitUsSection() {
             <div className="flex flex-col items-center text-center">
               <h3 className="font-bodoniModa italic text-[#1E3A47] text-3xl md:text-4xl lg:text-5xl mb-4">ADDRESS</h3>
               <a
-                href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
+                href="https://maps.google.com/?q=Headshot+Portland,+805+SW+Broadway,+Portland,+OR+97209"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-[#247BA0] transition-colors"
@@ -65,7 +65,7 @@ export default function VisitUsSection() {
               <p className="font-bold text-black text-center">
                 We&apos;re located at 805 SW Broadway in downtown Portland.{" "}
                 <a
-                  href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
+                  href="https://maps.google.com/?q=Headshot+Portland,+805+SW+Broadway,+Portland,+OR+97209"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#247BA0] hover:underline"
@@ -82,7 +82,7 @@ export default function VisitUsSection() {
             <div className="flex flex-col items-center text-center">
               <h3 className="font-bodoniModa italic text-[#1E3A47] text-3xl md:text-4xl lg:text-5xl mb-2">ADDRESS</h3>
               <a
-                href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
+                href="https://maps.google.com/?q=Headshot+Portland,+805+SW+Broadway,+Portland,+OR+97209"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-[#247BA0] transition-colors"
@@ -117,7 +117,7 @@ export default function VisitUsSection() {
               <p className="font-bold text-black text-center">
                 We&apos;re located at 805 SW Broadway in downtown Portland.{" "}
                 <a
-                  href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
+                  href="https://maps.google.com/?q=Headshot+Portland,+805+SW+Broadway,+Portland,+OR+97209"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#247BA0] hover:underline"
