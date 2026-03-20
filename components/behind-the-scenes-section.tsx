@@ -44,7 +44,7 @@ export default function BehindTheScenesSection() {
       name: "DUOLC EGNARO",
       title: "HR Manager, Thorn",
       image: "/images/bts-poster-1.webp",
-      video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ericabts-xK21OEM9wEK08g0hJYQM49H5z4SVZM.mp4",
+      video: "https://uzg4tlsilgmbv9ew.public.blob.vercel-storage.com/ericabts-gdapab2Ib1OQ9NlnLYLVszr9iEZTtJ.mp4",
       text: "Simply an amazing experience. We got headshots for all 42 employees and everyone was impressed with their pictures. Easy, professional and efficient. Thank you!",
     },
     {
@@ -52,7 +52,7 @@ export default function BehindTheScenesSection() {
       name: "SARA BRIDGES",
       title: "Real Estate Broker, Redfin",
       image: "/images/bts-poster-2.webp",
-      video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ScottBTS-Ot31nGVSJsgffLIotpTwf6GKhsRHLh.mp4",
+      video: "https://uzg4tlsilgmbv9ew.public.blob.vercel-storage.com/scottbts-fIkLZ2za3VT0gcgSeVpt4BwNT5gRYr.mp4",
       text: "Nathan did an amazing job! Lots of photos to choose from, gave artistic direction and helped us pick the best photos! 5star",
     },
     {
@@ -60,7 +60,7 @@ export default function BehindTheScenesSection() {
       name: "MICHAEL CHEN",
       title: "Software Engineer, Tech Co.",
       image: "/images/bts-poster-3.webp",
-      video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/EricaBTS2-TjcvDcAwSlhQAuTrXGy6N4Q0vKmSU7.mp4",
+      video: "https://uzg4tlsilgmbv9ew.public.blob.vercel-storage.com/ericabts2-hkzrTaQYgVchDgIKhJja9Em9YVCRLn.mp4",
       text: "Headshot Portland is one of the best photography companies I have ever done business with! Nathan and his team are incredibly helpful, and always on point with providing value. They work hard and it shows!",
     },
     {
@@ -68,7 +68,7 @@ export default function BehindTheScenesSection() {
       name: "Daniel Mikhaylenko",
       title: "Quality Assurance, Bloom.io",
       image: "/images/bts-poster-4.webp",
-      video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ScottBTS2-kpQ433pfSHwfpZOovp0dUojUsDrVXs.mp4",
+      video: "https://uzg4tlsilgmbv9ew.public.blob.vercel-storage.com/scottbts2-zKAjN5TyX4qDPDKsLLa5DPTuXh8ITQ.mp4",
       text: "100% would recommend to anyone. They were able to work around my schedule and provide me quality headshots for LinkedIn quickly and professionally.",
     },
     {
@@ -76,7 +76,7 @@ export default function BehindTheScenesSection() {
       name: "Trenten Cassity",
       title: "Sales, Nationwide Solar",
       image: "/images/bts-poster-5.webp",
-      video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ScottBTS3-U3Nle0DW439UCkHYYLpk4A21mWU42c.mp4",
+      video: "https://uzg4tlsilgmbv9ew.public.blob.vercel-storage.com/scottbts3-1hRD912oKWNcGjO4gnnTQJEmmBOdkE.mp4",
       text: "Great experience working with Nathan; he is the man to go to for headshots and portraits in Portland. He took care of me and will definitely take good care of you!",
     },
     {
@@ -84,7 +84,7 @@ export default function BehindTheScenesSection() {
       name: "Nicholas Long",
       title: "Concept Creation Manager, Nike",
       image: "/images/bts-poster-6.webp",
-      video: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/EricaBTS3-9XPAsxKt5NJNj44j5s1dbOUhcdP1Kj.mp4",
+      video: "https://uzg4tlsilgmbv9ew.public.blob.vercel-storage.com/ericabts3-W0kvL0UA4QvygUUQmz6BaW3tixRedn.mp4",
       text: "Fast, professional, and friendly. First impressions are everything, and I needed a headshot for my LinkedIn -- Nathan's work lets me put my best food forward. Highly recommend. Thank you, Nathan!",
     },
   ]
