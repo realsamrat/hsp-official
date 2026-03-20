@@ -1,15 +1,15 @@
 ---
-type: performance-optimization-project
+type: project
 people: []
 tags:
-  - pagespeed
-  - mobile
   - performance
+  - mobile
+  - pagespeed
   - lcp
-  - video-optimization
+  - accessibility
 status: active
 created_date: '2026-03-19'
-description: 'PageSpeed Round 4 optimization: Fix mobile LCP crisis (12.8s) caused by autoplaying videos and excessive payload. Detailed 4-phase action plan targeting mobile performance from 74→90+, accessibility to 100, and best practices to 100.'
+description: 'Mobile PageSpeed optimization for headshotportland.com: Fix LCP regression (12.8s) by disabling video autoplay on mobile, compressing PNG posters to WebP, and improving accessibility'
 ---
 # PageSpeed Round 4 — Mobile LCP Crisis Fix
 

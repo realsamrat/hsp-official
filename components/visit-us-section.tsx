@@ -30,17 +30,17 @@ export default function VisitUsSection() {
             <div className="flex flex-col items-center text-center">
               <h3 className="font-bodoniModa italic text-[#1E3A47] text-3xl md:text-4xl lg:text-5xl mb-4">ADDRESS</h3>
               <a
-                href="https://maps.google.com/?q=750+SW+9TH+AVE,PORTLAND,+OR+97205"
+                href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-[#247BA0] transition-colors"
               >
                 <p className="font-bold text-center">
-                  750 SW 9TH
+                  805 SW BROADWAY
                   <br />
-                  AVE,PORTLAND, OR
+                  PORTLAND, OR
                   <br />
-                  97205
+                  97209
                 </p>
               </a>
             </div>
@@ -63,9 +63,9 @@ export default function VisitUsSection() {
             <div className="flex flex-col items-center text-center">
               <h3 className="font-bodoniModa italic text-[#1E3A47] text-3xl md:text-4xl lg:text-5xl mb-4">LOCATION</h3>
               <p className="font-bold text-black text-center">
-                We&apos;re located in the Park Ave West building across from Nordstroms.{" "}
+                We&apos;re located at 805 SW Broadway in downtown Portland.{" "}
                 <a
-                  href="https://maps.google.com/?q=750+SW+9TH+AVE,PORTLAND,+OR+97205"
+                  href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#247BA0] hover:underline"
@@ -82,17 +82,17 @@ export default function VisitUsSection() {
             <div className="flex flex-col items-center text-center">
               <h3 className="font-bodoniModa italic text-[#1E3A47] text-3xl md:text-4xl lg:text-5xl mb-2">ADDRESS</h3>
               <a
-                href="https://maps.google.com/?q=750+SW+9TH+AVE,PORTLAND,+OR+97205"
+                href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-[#247BA0] transition-colors"
               >
                 <p className="font-bold text-center">
-                  750 SW 9TH
+                  805 SW BROADWAY
                   <br />
-                  AVE,PORTLAND, OR
+                  PORTLAND, OR
                   <br />
-                  97205
+                  97209
                 </p>
               </a>
             </div>
@@ -115,9 +115,9 @@ export default function VisitUsSection() {
             <div className="flex flex-col items-center text-center">
               <h3 className="font-bodoniModa italic text-[#1E3A47] text-3xl md:text-4xl lg:text-5xl mb-2">LOCATION</h3>
               <p className="font-bold text-black text-center">
-                We&apos;re located in the Park Ave West building across from Nordstroms.{" "}
+                We&apos;re located at 805 SW Broadway in downtown Portland.{" "}
                 <a
-                  href="https://maps.google.com/?q=750+SW+9TH+AVE,PORTLAND,+OR+97205"
+                  href="https://maps.google.com/?q=805+SW+Broadway,Portland,+OR+97209"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#247BA0] hover:underline"

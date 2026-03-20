@@ -1,15 +1,16 @@
 ---
 type: project
-people: []
+people:
+  - sam
 tags:
-  - pagespeed
+  - performance
   - next.js
-  - image-optimization
-  - web-performance
-  - bundle-optimization
+  - images
+  - optimization
+  - web
 status: active
 created_date: '2026-03-19'
-description: 'Performance optimization plan for headshotportland.com targeting mobile score 80+ and desktop 90+. Includes Next.js 16.2 upgrade, image optimization, bundle reduction, dynamic imports, and CLS fixes across 4 phases with detailed implementation roadmap.'
+description: Pagespeed optimization plan for headshotportland.com to improve mobile score from 40-50 to 80+ and desktop to 90+
 ---
 # pagespeed-optimization
 

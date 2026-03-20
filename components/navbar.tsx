@@ -6,7 +6,6 @@ const NAV_ITEMS = [
   { label: "HOME", href: "/" },
   { label: "HEADSHOTS", href: "/headshots" },
   { label: "PORTRAITS", href: "/portraits" },
-  { label: "GRAD", href: "/grad" },
   { label: "MODEL", href: "/model" },
   { label: "ABOUT", href: "/about" },
   { label: "FOR TEAMS", href: "/for-teams" },

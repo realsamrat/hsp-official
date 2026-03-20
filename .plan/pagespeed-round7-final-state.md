@@ -1,15 +1,15 @@
 ---
-type: performance report
+type: performance-report
 people: []
 tags:
   - pagespeed
   - performance
   - optimization
+  - mobile
   - web-vitals
-  - next.js
 status: completed
 created_date: '2026-03-20'
-description: Final PageSpeed optimization report for headshotportland.com achieving 97 mobile and 95 desktop performance scores through 7 iterative rounds of improvements. All categories at 95+ with three at 100. Remaining gaps due to third-party scripts and framework overhead.
+description: 'Final PageSpeed audit results for headshotportland.com: Mobile 97/100, Desktop 95/100. 32-point improvement from baseline (65→97 mobile). All metrics green; remaining gaps attributed to third-party scripts (Maps, GTM) and framework overhead.'
 ---
 # PageSpeed Final State — Round 7
 

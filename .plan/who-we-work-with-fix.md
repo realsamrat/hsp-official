@@ -3,12 +3,13 @@ type: fix
 people: []
 tags:
   - rendering
-  - performance
   - chromium
-  - css
+  - images
+  - performance
+  - frontend
 status: completed
 created_date: '2026-03-20'
-description: 'Fix rendering issues in the Who We Work With section where images appeared one-by-one and a large black void was visible in Chromium browsers due to async image decoding and deferred tile rasterization. Solution includes changing decoding to sync, adding background color and min-'
+description: 'Fix rendering issues in Who We Work With section where images appear one-by-one due to async decoding and Chromium tile-based deferred rasterization. Solution involves changing decoding to sync, adding fetchpriority, background colors, and min-height to grid containers.'
 ---
 # Fix: Who We Work With Section — Rendering Issues
 

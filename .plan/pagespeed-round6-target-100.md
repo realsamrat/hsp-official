@@ -2,14 +2,14 @@
 type: project
 people: []
 tags:
-  - pagespeed
   - performance
-  - optimization
-  - lighthouse
   - web-vitals
+  - optimization
+  - nextjs
+  - lighthouse
 status: active
 created_date: '2026-03-20'
-description: 'Track PageSpeed optimization efforts targeting 100/100 scores on mobile and desktop. Current mobile scores: Performance 91, Best Practices 96. Main blockers: LCP 3.2s (need <2.5s) and console errors. Priority actions: compress poster image (32KB→10KB), fix console errors, verify'
+description: 'PageSpeed optimization push to achieve 100 on both mobile and desktop. Mobile performance at 91 (LCP 3.2s blocks 100), Best Practices at 96 (console errors). Priority: compress poster from 32KB to 10KB and fix console errors to unlock both scores.'
 ---
 # PageSpeed Round 6 — Target 100 on Both
 

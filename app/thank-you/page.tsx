@@ -16,17 +16,6 @@ export default function ThankYouPage() {
         `}
       </Script>
 
-      {/* Header */}
-      <header className="w-full text-white py-6 px-4 md:px-8 lg:px-16">
-        <div className="container mx-auto">
-          <Link href="/" className="block">
-            <div className="w-32 h-10 relative">
-              <Image src="/images/logo.png" alt="Headshot Portland" fill priority className="object-contain" />
-            </div>
-          </Link>
-        </div>
-      </header>
-
       {/* Thank You Content */}
       <div className="w-full px-[10px] my-[10px]">
         <section

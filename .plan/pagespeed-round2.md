@@ -1,16 +1,15 @@
 ---
-type: audit
-people:
-  - Scott Schoettgen
+type: performance-analysis
+people: []
 tags:
   - pagespeed
   - performance
-  - optimization
-  - mobile
   - core-web-vitals
+  - mobile
+  - nextjs
 status: active
 created_date: '2026-03-19'
-description: 'PageSpeed Insights audit for headshotportland.com identifying critical mobile performance issues (LCP 8.8s vs 2.5s target, FCP 3.3s, SI 5.5s) with root cause analysis and prioritized implementation plan across hero component splitting, image optimization, lazy-loading, security h'
+description: 'Performance audit and optimization roadmap for headshotportland.com mobile experience, identifying LCP bottleneck (8.8s hero hydration) and 260+ KiB unused JS. Includes 5-phase action plan targeting Performance 65→85+ through hero component refactor, image optimization, lazy-load'
 ---
 # PageSpeed Optimization — Round 2 (Real PageSpeed Insights + Chrome DevTools)
 

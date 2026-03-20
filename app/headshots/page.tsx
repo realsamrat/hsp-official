@@ -659,10 +659,11 @@ export default function HeadshotsPage() {
                             src={item.src}
                             className={styles.videoThumbnail}
                             poster={item.poster}
-                            preload="none"
+                            preload="metadata"
                             playsInline
                             muted
                             loop
+                            autoPlay
                           />
 
                           {/* Thumbnail image */}
