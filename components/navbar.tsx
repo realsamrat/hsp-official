@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import NavLink from "./nav-link"
 
 const NAV_ITEMS = [
   { label: "HOME", href: "/" },
@@ -38,12 +39,13 @@ export default function Navbar() {
             <ul className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
-                  <Link
+                  <NavLink
                     href={item.href}
                     className="hover:underline focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded"
+                    activeClassName="bg-white text-brand-teal px-4 py-2 rounded-full font-bold focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
                   >
                     {item.label}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -60,7 +62,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* Mobile overlay — sibling of checkbox, uses peer-checked */}
+      {/* Mobile overlay */}
       <div className="fixed inset-0 bg-dark-bg z-50 hidden flex-col items-center justify-center peer-checked/menu:flex">
         {/* Close button */}
         <label htmlFor="nav-toggle" className="absolute top-6 right-5 text-white cursor-pointer" aria-label="Close menu">
@@ -73,12 +75,13 @@ export default function Navbar() {
           <ul className="flex flex-col space-y-6 text-center">
             {NAV_ITEMS.map((item) => (
               <li key={item.label}>
-                <Link
+                <NavLink
                   href={item.href}
                   className="text-white text-xl hover:text-brand-teal transition-colors"
+                  activeClassName="text-brand-teal text-xl font-bold"
                 >
                   {item.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
