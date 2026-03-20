@@ -24,7 +24,7 @@ export default function ProudlyOwnedSection() {
             className={`flex ${isMobile ? "flex-col" : "flex-row"} rounded-2xl overflow-hidden bg-[#fdf0e1] shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 hover:shadow-[0_25px_60px_rgba(0,0,0,0.3)] transform hover:-translate-y-1`}
           >
             {/* Left side - Portrait Image */}
-            <div className={`w-full ${isMobile ? "h-[400px]" : "md:w-[35%]"} relative`}>
+            <div className={`w-full ${isMobile ? "h-[400px]" : "md:w-[45%]"} relative`}>
               <div className="h-full relative">
                 <Image
                   src="/images/nathan-profile.webp"
@@ -32,13 +32,13 @@ export default function ProudlyOwnedSection() {
                   fill
                   className="object-cover object-center"
                   priority
-                  sizes="(max-width: 768px) 100vw, 35vw"
+                  sizes="(max-width: 768px) 100vw, 45vw"
                 />
               </div>
             </div>
 
             {/* Right side - Content */}
-            <div className={`w-full ${isMobile ? "" : "md:w-[65%]"} p-8 md:p-10 lg:p-14 flex flex-col justify-center`}>
+            <div className={`w-full ${isMobile ? "" : "md:w-[55%]"} p-8 md:p-10 lg:p-14 flex flex-col justify-center`}>
               {/* Heading */}
               <h2 className="font-bodoniModa text-black text-3xl md:text-4xl lg:text-5xl mb-6">
                 Proudly owned &<br className={isMobile ? "hidden" : "hidden md:block"} />
