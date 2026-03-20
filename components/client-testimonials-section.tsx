@@ -139,8 +139,8 @@ export default function ClientTestimonialsSection() {
             ))}
           </div>
 
-          {/* Video CTA Section - Using inline SVG with mobile/desktop versions */}
-          <div className="relative mb-8">
+          {/* Video CTA Section - full width on mobile */}
+          <div className={`relative mb-8 ${isMobile ? "-mx-[10px] w-[calc(100%+20px)]" : ""}`}>
             <div className="relative w-full" style={{ height: isMobile ? "299px" : "168px" }}>
               {/* Desktop SVG - hidden on mobile */}
               {!isMobile && (
