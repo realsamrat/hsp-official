@@ -21,6 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${bodoni.variable} ${playfair.variable} ${bodoniModa.variable}`}>
       <head>
+        {/* Preload LCP image (video poster) */}
+        <link
+          rel="preload"
+          href="/modern-photography-studio.webp"
+          as="image"
+          type="image/webp"
+        />
         {/* Google tag (gtag.js) — lazyOnload to avoid competing with LCP */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-847156852" strategy="lazyOnload" />
         <Script id="google-analytics" strategy="lazyOnload">
