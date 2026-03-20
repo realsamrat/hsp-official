@@ -3,7 +3,7 @@
 import { useState } from "react"
 
 const MAP_EMBED_URL =
-  "https://www.google.com/maps/embed/v1/place?key=AIzaSyCmL18misQw9KdwqGaw3zHkitj8vG6QF2Y&q=Headshot+Portland,805+SW+Broadway,Portland,OR+97209&zoom=16"
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5!2d-122.6815!3d45.5192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a1c3a23b5e7%3A0x8e3e9d5b0f1a2c3d!2sHeadshot%20Portland!5e0!3m2!1sen!2sus"
 
 export default function InteractiveMap() {
   const [showMap, setShowMap] = useState(false)
