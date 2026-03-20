@@ -60,72 +60,25 @@ export default function ProudlyOwnedSection() {
                 COMPANIES NATHAN HAS WORKED WITH
               </Link>
 
-              {/* Client Logos Section - Redesigned for better mobile display */}
-              <div className={`grid ${isMobile ? "grid-cols-2 gap-6" : "grid-cols-5 gap-4"} w-full`}>
-                {/* Amazon Logo */}
-                <div className="flex items-center justify-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/amazon-logo-new.png"
-                    alt="Amazon logo"
-                    width={120}
-                    height={40}
-                    style={{ maxHeight: "40px", maxWidth: "100%" }}
-                    loading="lazy"
-                  />
+              {/* Client Logos */}
+              <div className={`grid ${isMobile ? "grid-cols-2 gap-6" : "grid-cols-5 gap-8"} w-full items-center`}>
+                {/* eslint-disable @next/next/no-img-element */}
+                <div className="flex items-center justify-center h-10">
+                  <img src="/images/amazon-logo-new.png" alt="Amazon logo" width={120} height={36} className="h-8 w-auto object-contain" loading="lazy" />
                 </div>
-
-                {/* Intel Logo */}
-                <div className="flex items-center justify-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/intel-logo-new.png"
-                    alt="Intel logo"
-                    width={80}
-                    height={40}
-                    style={{ maxHeight: "40px", maxWidth: "100%" }}
-                    loading="lazy"
-                  />
+                <div className="flex items-center justify-center h-10">
+                  <img src="/images/intel-logo-new.png" alt="Intel logo" width={80} height={32} className="h-7 w-auto object-contain" loading="lazy" />
                 </div>
-
-                {/* RE/MAX Logo */}
-                <div className={`flex items-center justify-center ${isMobile ? "col-span-2" : ""}`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/remax-logo-new.svg"
-                    alt="RE/MAX logo"
-                    width={120}
-                    height={40}
-                    style={{ maxHeight: "40px", maxWidth: "100%" }}
-                    loading="lazy"
-                  />
+                <div className={`flex items-center justify-center h-10 ${isMobile ? "col-span-2" : ""}`}>
+                  <img src="/images/remax-logo-new.svg" alt="RE/MAX logo" width={120} height={36} className="h-8 w-auto object-contain" loading="lazy" />
                 </div>
-
-                {/* WeWork Logo */}
-                <div className={`flex items-center justify-center ${isMobile ? "col-span-1" : ""}`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/wework-logo-new.svg"
-                    alt="WeWork logo"
-                    width={100}
-                    height={40}
-                    style={{ maxHeight: "40px", maxWidth: "100%" }}
-                    loading="lazy"
-                  />
+                <div className={`flex items-center justify-center h-10 ${isMobile ? "col-span-1" : ""}`}>
+                  <img src="/images/ebay-logo.svg" alt="eBay logo" width={100} height={36} className="h-8 w-auto object-contain" loading="lazy" />
                 </div>
-
-                {/* Nike Logo */}
-                <div className={`flex items-center justify-center ${isMobile ? "col-span-1" : ""}`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/nike-logo-new.svg"
-                    alt="Nike logo"
-                    width={60}
-                    height={40}
-                    style={{ maxHeight: "40px", maxWidth: "100%" }}
-                    loading="lazy"
-                  />
+                <div className={`flex items-center justify-center h-10 ${isMobile ? "col-span-1" : ""}`}>
+                  <img src="/images/nike-logo-new.svg" alt="Nike logo" width={80} height={32} className="h-7 w-auto object-contain" loading="lazy" />
                 </div>
+                {/* eslint-enable @next/next/no-img-element */}
               </div>
             </div>
           </div>
