@@ -5,11 +5,11 @@ tags:
   - pagespeed
   - performance
   - optimization
-  - mobile
   - web-vitals
+  - metrics
 status: completed
 created_date: '2026-03-20'
-description: 'Final PageSpeed audit results for headshotportland.com: Mobile 97/100, Desktop 95/100. 32-point improvement from baseline (65→97 mobile). All metrics green; remaining gaps attributed to third-party scripts (Maps, GTM) and framework overhead.'
+description: 'Final PageSpeed optimization results for headshotportland.com (Round 7): 97/100 mobile performance, 95/100 desktop. Documents journey from 65→97 on mobile and remaining third-party constraints preventing perfect score.'
 ---
 # PageSpeed Final State — Round 7
 

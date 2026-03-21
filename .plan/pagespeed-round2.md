@@ -1,15 +1,15 @@
 ---
-type: performance-analysis
+type: performance-audit
 people: []
 tags:
-  - pagespeed
   - performance
   - core-web-vitals
   - mobile
-  - nextjs
+  - lcp
+  - next.js
 status: active
 created_date: '2026-03-19'
-description: 'Performance audit and optimization roadmap for headshotportland.com mobile experience, identifying LCP bottleneck (8.8s hero hydration) and 260+ KiB unused JS. Includes 5-phase action plan targeting Performance 65→85+ through hero component refactor, image optimization, lazy-load'
+description: 'PageSpeed Insights analysis for headshotportland.com (mobile): Performance 65, LCP 8.8s, FCP 3.3s, SI 5.5s. Prioritized action plan to improve to 85+ via hero RSC refactoring, image optimization, lazy-loading videos/maps, and security headers.'
 ---
 # PageSpeed Optimization — Round 2 (Real PageSpeed Insights + Chrome DevTools)
 

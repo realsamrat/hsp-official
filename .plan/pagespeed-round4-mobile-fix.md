@@ -1,15 +1,15 @@
 ---
-type: project
+type: performance-optimization
 people: []
 tags:
   - performance
   - mobile
   - pagespeed
-  - lcp
+  - video
   - accessibility
 status: active
 created_date: '2026-03-19'
-description: 'Mobile PageSpeed optimization for headshotportland.com: Fix LCP regression (12.8s) by disabling video autoplay on mobile, compressing PNG posters to WebP, and improving accessibility'
+description: 'Performance optimization for headshotportland.com — fixing mobile LCP regression (87→74 score) caused by hero video autoplay. LCP increased to 12.8s due to video buffering on Slow 4G. Action plan includes removing autoPlay from non-hero videos, disabling hero video autoplay on mo'
 ---
 # PageSpeed Round 4 — Mobile LCP Crisis Fix
 

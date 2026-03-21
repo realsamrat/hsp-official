@@ -3,13 +3,13 @@ type: task
 people: []
 tags:
   - performance
-  - lazy-loading
   - google-maps
+  - lazy-loading
   - optimization
-  - frontend
+  - react
 status: active
 created_date: '2026-03-20'
-description: Lazy-load Google Maps iframe on homepage by replacing with static image and click-to-load interaction to reduce initial page load by 409 KiB JS and 180ms main thread time
+description: Replace full Google Maps iframe with static image and click-to-load interactive map to remove 409 KiB JS and 180ms main thread overhead from initial page load
 ---
 # Google Maps — Static Image → Click to Load
 
