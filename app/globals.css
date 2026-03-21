@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@config "../tailwind.config.ts";
+
 @font-face {
   font-family: 'LTCBodoni175Pro';
   src: url('/fonts/LTCBodoni175Pro-Regular.woff2') format('woff2');
