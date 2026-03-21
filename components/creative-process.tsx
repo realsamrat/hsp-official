@@ -25,7 +25,7 @@ export default function CreativeProcess() {
               <span className="text-black">Our </span>
               <span className="text-teal-blue">Creative Process</span>
             </h2>
-            <Link href="/faq" className="flex items-center group focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:outline-none rounded">
+            <Link href="/faq" className="flex items-center group focus-visible:ring-2 focus-visible:ring-brand-teal focus-visible:outline-hidden rounded">
               <span className="font-inter font-bold mr-2 border-b border-black text-black" style={{ fontSize: "16px" }}>
                 EXPLORE COMMON QUESTIONS
               </span>

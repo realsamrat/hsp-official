@@ -28,13 +28,13 @@ export default function ContactHero() {
           <div className={`flex ${isMobile ? "flex-col w-full" : "flex-row"} gap-4 justify-center`}>
             <Link
               href="https://ww3.headshotportland.com/instant-quote"
-              className="bg-brand-teal-hover text-white text-center py-3 px-8 rounded-full whitespace-nowrap hover:bg-brand-teal-deep transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+              className="bg-brand-teal-hover text-white text-center py-3 px-8 rounded-full whitespace-nowrap hover:bg-brand-teal-deep transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden"
             >
               <span className="text-base font-bold">GET A FREE QUOTE</span>
             </Link>
             <Link
               href="https://ww3.headshotportland.com/instant"
-              className="border border-white text-white text-center py-3 px-8 rounded-full whitespace-nowrap hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+              className="border border-white text-white text-center py-3 px-8 rounded-full whitespace-nowrap hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden"
             >
               <span className="text-base font-bold">BOOK NOW</span>
             </Link>

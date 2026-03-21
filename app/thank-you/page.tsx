@@ -58,19 +58,19 @@ export default function ThankYouPage() {
 
               <ol className="space-y-4 mb-8">
                 <li className="flex items-start">
-                  <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#247BA0] text-white mr-3">
+                  <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#247BA0] text-white mr-3">
                     1
                   </span>
                   <span>Our team will review your request and prepare a custom quote based on your needs.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#247BA0] text-white mr-3">
+                  <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#247BA0] text-white mr-3">
                     2
                   </span>
                   <span>You&apos;ll receive your quote via email within 24 hours (often much sooner).</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#247BA0] text-white mr-3">
+                  <span className="shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-[#247BA0] text-white mr-3">
                     3
                   </span>
                   <span>If you have any questions, feel free to call us directly using the button below.</span>

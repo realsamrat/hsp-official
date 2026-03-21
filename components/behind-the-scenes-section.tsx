@@ -208,7 +208,7 @@ export default function BehindTheScenesSection() {
                   </div>
                 </div>
                 <div className="mt-auto rounded-lg overflow-hidden">
-                  <div className="aspect-[9/16] relative">
+                  <div className="aspect-9/16 relative">
                     {testimonial.video ? (
                       <LazyVideo
                         src={testimonial.video}
@@ -246,7 +246,7 @@ export default function BehindTheScenesSection() {
               >
                 {/* Left side - Video */}
                 <div className="w-[40%] h-full relative rounded-lg overflow-hidden">
-                  <div className="aspect-[9/16] h-full relative">
+                  <div className="aspect-9/16 h-full relative">
                     {testimonial.video ? (
                       <LazyVideo
                         src={testimonial.video}

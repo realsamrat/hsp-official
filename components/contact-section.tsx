@@ -95,7 +95,7 @@ export default function ContactSection() {
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
                   {/* Email */}
                   <div className="flex flex-col gap-[2px]">
-                    <label className="text-white/60 font-medium text-[16px] leading-[1.5]">
+                    <label className="text-white/60 font-medium text-[16px] leading-normal">
                       Email
                     </label>
                     <input
@@ -104,14 +104,14 @@ export default function ContactSection() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="w-full rounded-[8px] p-3 text-[16px] text-[#959595] placeholder:text-[#959595] focus:outline-none focus:ring-1 focus:ring-brand-teal focus-visible:ring-2 focus-visible:ring-brand-teal transition-colors"
+                      className="w-full rounded-[8px] p-3 text-[16px] text-[#959595] placeholder:text-[#959595] focus:outline-hidden focus:ring-1 focus:ring-brand-teal focus-visible:ring-2 focus-visible:ring-brand-teal transition-colors"
                       style={{ backgroundColor: "rgba(248,250,252,0.12)", border: "none" }}
                     />
                   </div>
 
                   {/* Message */}
                   <div className="flex flex-col gap-[2px]">
-                    <label className="text-white/60 font-medium text-[16px] leading-[1.5]">
+                    <label className="text-white/60 font-medium text-[16px] leading-normal">
                       Message <span className="text-white/60">*</span>
                     </label>
                     <textarea
@@ -120,7 +120,7 @@ export default function ContactSection() {
                       onChange={(e) => setMessage(e.target.value)}
                       required
                       rows={6}
-                      className="w-full rounded-[8px] p-3 text-[16px] text-[#959595] placeholder:text-[#959595] focus:outline-none focus:ring-1 focus:ring-brand-teal focus-visible:ring-2 focus-visible:ring-brand-teal transition-colors resize-none"
+                      className="w-full rounded-[8px] p-3 text-[16px] text-[#959595] placeholder:text-[#959595] focus:outline-hidden focus:ring-1 focus:ring-brand-teal focus-visible:ring-2 focus-visible:ring-brand-teal transition-colors resize-none"
                       style={{ backgroundColor: "rgba(248,250,252,0.12)", border: "none" }}
                     />
                   </div>

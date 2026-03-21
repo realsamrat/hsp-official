@@ -188,7 +188,7 @@ export default function Hero() {
             </div>
 
             {/* Gradient Overlay for grid */}
-            <div className="absolute bottom-0 left-0 right-0 h-2/3 md:h-1/2 bg-gradient-to-t from-black/95 via-black/80 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-2/3 md:h-1/2 bg-linear-to-t from-black/95 via-black/80 to-transparent"></div>
           </div>
 
           {/* Combined Text Container */}

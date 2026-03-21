@@ -35,7 +35,7 @@ export default function BeforeAfterSection() {
           {/* Card 1 - Megan */}
           <div className="relative bg-[#0F0E0F] rounded-lg overflow-visible flex flex-col items-center">
             {/* Main Image - Added max-width and max-height constraints */}
-            <div className="relative aspect-[4/5] md:aspect-square w-full rounded-t-lg overflow-visible">
+            <div className="relative aspect-4/5 md:aspect-square w-full rounded-t-lg overflow-visible">
               <Image
                 src="/images/megan-headshot.webp"
                 alt="Professional headshot of Megan"
@@ -70,7 +70,7 @@ export default function BeforeAfterSection() {
           {/* Card 2 - Jordan */}
           <div className="relative bg-[#0F0E0F] rounded-lg overflow-visible flex flex-col items-center">
             {/* Main Image - Added max-width and max-height constraints */}
-            <div className="relative aspect-[4/5] md:aspect-square w-full rounded-t-lg overflow-visible">
+            <div className="relative aspect-4/5 md:aspect-square w-full rounded-t-lg overflow-visible">
               <Image
                 src="/images/jordan-headshot.webp"
                 alt="Professional headshot of Jordan"
@@ -106,7 +106,7 @@ export default function BeforeAfterSection() {
         <div className="w-full max-w-4xl mx-auto">
           <Link
             href="https://ww3.headshotportland.com/instant-quote"
-            className="block w-full bg-[#1a6985] text-white text-center py-4 md:py-5 rounded-full relative overflow-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+            className="block w-full bg-[#1a6985] text-white text-center py-4 md:py-5 rounded-full relative overflow-hidden focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden"
           >
             <div
               className="absolute inset-0 rounded-full"

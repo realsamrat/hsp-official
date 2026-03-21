@@ -263,7 +263,7 @@ export default function ForTeamsPage() {
                         </div>
                         <div className="mb-3 sm:mb-4">
                           <div className="flex items-start gap-3 sm:gap-4">
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg overflow-hidden flex-shrink-0 hidden sm:block">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg overflow-hidden shrink-0 hidden sm:block">
                               {item.id === 13 && (
                                 // eslint-disable-next-line @next/next/no-img-element
                                 <img
@@ -464,10 +464,10 @@ export default function ForTeamsPage() {
               </div>
             </div>
             <div className="flex gap-4">
-              <Link href="#" className="text-white hover:text-[#247BA0] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded" aria-label="Instagram">
+              <Link href="#" className="text-white hover:text-[#247BA0] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden rounded" aria-label="Instagram">
                 <Instagram className="h-6 w-6" aria-hidden="true" />
               </Link>
-              <Link href="#" className="text-white hover:text-[#247BA0] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded" aria-label="Facebook">
+              <Link href="#" className="text-white hover:text-[#247BA0] focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden rounded" aria-label="Facebook">
                 <Facebook className="h-6 w-6" aria-hidden="true" />
               </Link>
             </div>

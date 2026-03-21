@@ -10,7 +10,7 @@ function StarIcon() {
 
 function ReviewCard({ name, text, avatar }: { name: string; text: string; avatar: string }) {
   return (
-    <div className="flex-shrink-0 w-[300px] md:w-[350px] h-[180px] bg-[#1C1B1C] rounded-xl p-5 border border-[#2a2a2a] flex flex-col">
+    <div className="shrink-0 w-[300px] md:w-[350px] h-[180px] bg-[#1C1B1C] rounded-xl p-5 border border-[#2a2a2a] flex flex-col">
       {/* Stars + Google logo */}
       <div className="flex items-center justify-between mb-2">
         <div className="flex">
@@ -46,12 +46,12 @@ export default function ReviewsMarquee() {
   return (
     <section className="w-full py-8 overflow-hidden bg-black relative group">
       {/* Dark edge fades */}
-      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-linear-to-r from-black to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-linear-to-l from-black to-transparent z-10 pointer-events-none" />
 
       {/* Hover overlay — desktop only */}
       <div className="hidden md:flex absolute inset-0 z-20 items-center justify-center pointer-events-none group-hover:pointer-events-auto">
-        <div className="absolute inset-0 bg-black/0 backdrop-blur-[0px] group-hover:bg-black/50 group-hover:backdrop-blur-[8px] transition-all duration-200" style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }} />
+        <div className="absolute inset-0 bg-black/0 backdrop-blur-[0px] group-hover:bg-black/50 group-hover:backdrop-blur-sm transition-all duration-200" style={{ transitionTimingFunction: "cubic-bezier(0.25, 0.46, 0.45, 0.94)" }} />
         <a
           href="/reviews"
           className="relative z-10 bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all duration-500 shadow-lg opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100"

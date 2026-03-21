@@ -44,7 +44,7 @@ export default function ExactMasonryGridWithResponsive() {
         </div>
 
         {/* Middle row - large image */}
-        <div className="col-span-2 aspect-[3/4] rounded-[12px] overflow-hidden my-4 bg-white relative">
+        <div className="col-span-2 aspect-3/4 rounded-[12px] overflow-hidden my-4 bg-white relative">
           <Image
             src="/images/headshot-5.webp"
             alt="Professional headshot of woman with curly hair"

@@ -281,7 +281,7 @@ export default function ModelPage() {
                         </div>
                         <div className="mb-3 sm:mb-4">
                           <div className="flex items-start gap-3 sm:gap-4">
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg overflow-hidden flex-shrink-0 hidden sm:block">
+                            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg overflow-hidden shrink-0 hidden sm:block">
                               {item.id === 13 && (
                                 // eslint-disable-next-line @next/next/no-img-element
                                 <img

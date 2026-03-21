@@ -194,7 +194,7 @@ export default function QuotesSection() {
           >
             <Link
               href="https://ww3.headshotportland.com/instant-quote"
-              className={`bg-teal-blue text-white font-inter font-bold text-center rounded-full flex-shrink-0 ${isMobile ? "w-full mb-8" : ""}`}
+              className={`bg-teal-blue text-white font-inter font-bold text-center rounded-full shrink-0 ${isMobile ? "w-full mb-8" : ""}`}
               style={{
                 padding: "20px 24px",
                 fontSize: "18px",
@@ -205,7 +205,7 @@ export default function QuotesSection() {
             >
               GET A FREE QUOTE
             </Link>
-            {!isMobile && <span className="inline-block w-full h-[1px] bg-[#247BA0]"></span>}
+            {!isMobile && <span className="inline-block w-full h-px bg-[#247BA0]"></span>}
           </div>
         </div>
       </section>

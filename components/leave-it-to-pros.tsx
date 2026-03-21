@@ -66,7 +66,7 @@ export default function LeaveItToPros() {
           {/* CTA */}
           <Link
             href="https://ww3.headshotportland.com/instant-quote"
-            className="inline-flex items-center gap-3 bg-black text-white py-4 px-10 rounded-full hover:bg-[#247BA0] transition-colors focus-visible:ring-2 focus-visible:ring-[#247BA0] focus-visible:outline-none"
+            className="inline-flex items-center gap-3 bg-black text-white py-4 px-10 rounded-full hover:bg-[#247BA0] transition-colors focus-visible:ring-2 focus-visible:ring-[#247BA0] focus-visible:outline-hidden"
           >
             <span className="font-inter font-bold text-base">GET A FREE QUOTE</span>
             <span className="bg-white/20 rounded-full w-8 h-8 flex items-center justify-center" aria-hidden="true">

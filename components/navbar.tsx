@@ -22,7 +22,7 @@ export default function Navbar() {
       <header className="w-full text-white py-6 px-5 md:px-16 relative">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="block z-[60]">
+          <Link href="/" className="block z-60">
             <div className="w-24 h-8 relative">
               <Image
                 src="/images/logos/headshot_portland_white.svg"
@@ -41,8 +41,8 @@ export default function Navbar() {
                 <li key={item.label}>
                   <NavLink
                     href={item.href}
-                    className="hover:underline focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none rounded"
-                    activeClassName="bg-white text-brand-teal px-4 py-2 rounded-full font-bold focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none"
+                    className="hover:underline focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden rounded"
+                    activeClassName="bg-white text-brand-teal px-4 py-2 rounded-full font-bold focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-hidden"
                   >
                     {item.label}
                   </NavLink>
