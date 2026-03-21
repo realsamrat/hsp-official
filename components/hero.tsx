@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 import HeroVideoPlayer from "./hero-video-player"
+import ReviewsMarquee from "./reviews-marquee"
 
 export default function Hero() {
   return (
@@ -70,6 +71,9 @@ export default function Hero() {
           </div>
         </div>
       </section>
+
+      {/* Reviews Marquee — between hero and image grid */}
+      <ReviewsMarquee />
 
       {/* Leave it to the Pros Section */}
       <section className="w-full relative mt-0 mb-0">
