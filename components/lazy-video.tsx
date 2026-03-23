@@ -42,7 +42,6 @@ export default function LazyVideo({
     if (!video) return
 
     const handlePlaying = () => {
-      // Wait for actual frame to render before showing
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           setIsReady(true)
@@ -51,10 +50,11 @@ export default function LazyVideo({
     }
 
     video.addEventListener("playing", handlePlaying)
-    video.src = src
+
+    // src is already in HTML (Safari requires this for autoplay)
+    // Just trigger load + play
     video.load()
 
-    // Only play once enough data is buffered
     const handleCanPlayThrough = () => {
       video.play().catch(() => {})
     }
@@ -64,7 +64,7 @@ export default function LazyVideo({
       video.removeEventListener("playing", handlePlaying)
       video.removeEventListener("canplaythrough", handleCanPlayThrough)
     }
-  }, [isVisible, src])
+  }, [isVisible])
 
   return (
     <div ref={containerRef} className={`relative ${className}`}>
@@ -79,6 +79,7 @@ export default function LazyVideo({
       <video
         ref={videoRef}
         className={`w-full h-full object-cover rounded transition-opacity duration-500 ${isReady ? "opacity-100" : "opacity-0"}`}
+        src={src}
         muted
         loop
         playsInline

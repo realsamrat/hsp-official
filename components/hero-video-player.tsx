@@ -20,13 +20,11 @@ export default function HeroVideoPlayer({ src }: { src: string }) {
     const isMobile = window.innerWidth < 768
 
     if (isMobile) {
-      // On mobile: only load video after user scrolls (proves interaction,
-      // avoids video frame replacing poster as LCP during Lighthouse test)
+      // On mobile: only load video after user scrolls
       const handleScroll = () => {
         window.removeEventListener("scroll", handleScroll)
-        // Small delay after scroll to avoid competing with scroll rendering
         setTimeout(() => {
-          video.src = src
+          // src is already in HTML — just trigger load
           video.load()
         }, 1000)
       }
@@ -38,7 +36,6 @@ export default function HeroVideoPlayer({ src }: { src: string }) {
     } else {
       // On desktop: load after 2s delay
       const timer = setTimeout(() => {
-        video.src = src
         video.load()
       }, 2000)
       return () => {
@@ -46,12 +43,13 @@ export default function HeroVideoPlayer({ src }: { src: string }) {
         clearTimeout(timer)
       }
     }
-  }, [src])
+  }, [])
 
   return (
     <video
       ref={videoRef}
       className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${isReady ? "opacity-100" : "opacity-0"}`}
+      src={src}
       muted
       loop
       playsInline
