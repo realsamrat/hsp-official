@@ -1,8 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Phone } from "lucide-react"
-import QuoteForm from "../(paid)/_components/QuoteForm"
-import TrustBar from "../(paid)/_components/TrustBar"
+import QuoteForm from "../_components/QuoteForm"
+import TrustBar from "../_components/TrustBar"
 
 export const metadata = {
   title: "Get your custom quote — Headshot Portland",
