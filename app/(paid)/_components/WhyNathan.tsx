@@ -23,7 +23,7 @@ export default function WhyNathan() {
     <div className="w-full px-[10px] my-[10px]">
     <section
       aria-labelledby="why-nathan-heading"
-      className="w-full rounded-[10px] bg-[#FAFAF7]"
+      className="w-full rounded-[10px] border-[1.5px] border-[#C8C8C8] bg-[#FAFAF7]"
     >
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
         <h2
